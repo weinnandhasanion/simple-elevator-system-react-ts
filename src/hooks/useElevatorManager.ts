@@ -9,7 +9,7 @@ import { queueReducer } from "../reducer/queue";
 import { elevatorReducer } from "../reducer/elevator";
 import config from "../config";
 
-const createElevator = (id: number): Elevator => ({
+export const createElevator = (id: number): Elevator => ({
   id,
   currentFloor: 1,
   state: ElevatorState.Idle,
