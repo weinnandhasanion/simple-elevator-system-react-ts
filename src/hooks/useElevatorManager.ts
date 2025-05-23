@@ -81,7 +81,7 @@ const useElevatorManager = () => {
   useEffect(() => {
     const interval = setInterval(() => {
       dispatchElevator({ type: "PROCESS_NEXT" });
-    }, 100);
+    }, config.tick);
 
     return () => clearInterval(interval);
   }, []);
